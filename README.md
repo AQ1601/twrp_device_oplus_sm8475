@@ -1,0 +1,48 @@
+# TWRP device tree for OPLUS sm8475 sreies
+
+## Supported devices
+- OnePlus Ace Pro(CN, GL, IN)
+## Build it yourself?
+
+```shell
+mkdir twrp && cd twrp
+repo init --depth=1 -u https://github.com/TWRP-Test/platform_manifest_twrp_aosp.git -b twrp-16.0
+repo sync
+git clone --depth=1 https://github.com/QQiuAaa/twrp_device_oplus_sm8475 device/oplus/sm8475
+```
+
+```shell
+source build/envsetup.sh
+lunch twrp_sm8475
+m recoveryimage
+```
+
+If there is no error, recovery.img will be found in `out/target/product/sm8475/recovery.img`
+
+## Features
+
+Works:
+
+- [X] ADB
+- [X] Display
+- [X] Decryption
+- [X] Fasbootd
+- [X] Flashing
+- [X] MTP
+- [X] Sideload
+- [X] Touch
+- [X] USB OTG
+- [X] Vibrator
+
+## To use it:
+
+```shell
+fastboot flash recovery recovery.img
+```
+
+or
+
+```shell
+fastboot flash recovery_a recovery.img
+fastboot flash recovery_b recovery.img
+```
