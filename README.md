@@ -8,7 +8,7 @@
 mkdir twrp && cd twrp
 repo init --depth=1 -u https://github.com/TWRP-Test/platform_manifest_twrp_aosp.git -b twrp-16.0
 repo sync
-git clone --depth=1 https://github.com/QQiuAaa/twrp_device_oplus_sm8475 device/oplus/sm8475
+git clone --depth=1 https://github.com/AQ1601/twrp_device_oplus_sm8475 device/oplus/sm8475
 ```
 
 ```shell
